@@ -1,0 +1,115 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+/* per l'header */
+header{
+  width:100%;
+  height:70px;
+  font-family: 'Roboto', sans-serif;
+}
+/* container che conterrà le varie componenti dell'header */
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+/* parte di sinistra */
+.header_left {
+  width: 10%;
+  float: left;
+  display: inline-block;
+  height: 70px;
+}
+/* parte centrale */
+.header_center{
+  width: 20%;
+  float: left;
+}
+/* parte di destra */
+.header_right {
+  width:70%;
+  float: left;
+  text-align: right;
+}
+/* per le liste */
+.header_center ul li, .header_right ul li{
+  display: inline-block;
+  line-height: 70px;
+}
+/* per tutti i link dell'header */
+header a{
+  text-decoration: none;
+  color: black;
+  opacity: 0.5;
+  padding:27px 0;
+  margin: 0 15px;
+}
+/* quando passo sopra il mouse sui link */
+header a:hover{
+  opacity: 1;
+}
+/* per il logo */
+.header_left img {
+  width: 100px;
+  height: 30px;
+  margin: 20px 0;
+}
+.header_right .relative_item {
+  position: relative;
+}
+/* per i due container che conterranno il menù dropdown */
+.header_right .dropdown_container,
+.header_right .dropdown_container_giant {
+  position: absolute;
+  top: 70px;
+  text-align: left;
+  display: none;
+}
+/* classe che mi serve per quando clicco o passo sopra il mouse */
+.header_right .open_dropdown {
+  display: block;
+}
+/* per il container del sottomenù più grande (Prodotti) */
+.header_right .dropdown_container_giant {
+  width: 350px;
+}
+/* per i container dei sottomenù */
+.header_right .dropdown_container,
+.header_right .dropdown_container_giant {
+  height: auto;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+}
+/* per il container del sottomenù */
+.header_right .dropdown_container {
+  width: 200px;
+}
+/* per i vari elementi di ogni sottomenù */
+.header_right .dropdown_container .dropdown li,
+.header_right .dropdown_container_giant .dropdown li {
+  display: block;
+  padding: 0 20px;
+}
+/* quando passo sopra il mouse sui vari link dei sottomenù */
+.header_right .dropdown_container .dropdown li:hover,
+.header_right .dropdown_container_giant .dropdown li:hover {
+  background: rgb(243, 244, 245);
+}
+/* per gli esponenti */
+.header_right sup {
+  color: #eb008d;
+}
+/* per il link bottone */
+.header_right .button{
+  padding: 10px 24px;
+  background-color: #eb008d;
+  color: white;
+  font-weight: bold;
+  opacity: 1;
+  border-radius: 50px;
+}
+/* quando passo sul bottone */
+.header_right .button:hover{
+  background-color: rgb(210, 0, 126);
+}
